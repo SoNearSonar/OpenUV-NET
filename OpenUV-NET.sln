@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenUV.Web", "OpenUV.Web\OpenUV.Web.csproj", "{9E9BBD16-4FD8-4B25-92E9-6D32C5CA84E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenUV.Web.Tests", "OpenUV.Web.Tests\OpenUV.Web.Tests.csproj", "{1967CC77-A035-45A4-B3C0-05D17D04F752}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E9BBD16-4FD8-4B25-92E9-6D32C5CA84E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9BBD16-4FD8-4B25-92E9-6D32C5CA84E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9BBD16-4FD8-4B25-92E9-6D32C5CA84E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9BBD16-4FD8-4B25-92E9-6D32C5CA84E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1967CC77-A035-45A4-B3C0-05D17D04F752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1967CC77-A035-45A4-B3C0-05D17D04F752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1967CC77-A035-45A4-B3C0-05D17D04F752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1967CC77-A035-45A4-B3C0-05D17D04F752}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CD23F6E-3A81-4E54-937B-CD75040E5846}
+	EndGlobalSection
+EndGlobal

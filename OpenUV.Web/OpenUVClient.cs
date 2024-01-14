@@ -31,7 +31,7 @@ namespace OpenUV.Web
             throw new HttpRequestException($"{(int)message.StatusCode} {message.StatusCode} code - Request was not successful");
         }
 
-        public async Task<ApiStatistics> GetApiRequestStats()
+        public async Task<ApiStatistics> GetApiRequestStatistics()
         {
             var message = await _httpClient.GetAsync(_url + "/stat");
             if (message.IsSuccessStatusCode)
@@ -51,6 +51,19 @@ namespace OpenUV.Web
             {
                 string result = await message.Content.ReadAsStringAsync();
                 return DeserializeObject<UVIndexResult>(result).UVIndexStatistics;
+            }
+
+            throw new HttpRequestException($"{(int)message.StatusCode} {message.StatusCode} code - Request was not successful");
+        }
+
+        public async Task<List<UVIndexForecast>> GetUVIndexForecast(double latitude, double longitude, uint altitude = 100, DateTime time = new DateTime())
+        {
+            string query = QueryBuilder.FormatQueryParams(latitude, longitude, altitude, time);
+            var message = await _httpClient.GetAsync(_url + "/forecast" + query);
+            if (message.IsSuccessStatusCode)
+            {
+                string result = await message.Content.ReadAsStringAsync();
+                return DeserializeObject<UVIndexForecastResult>(result).UVIndexForecasts;
             }
 
             throw new HttpRequestException($"{(int)message.StatusCode} {message.StatusCode} code - Request was not successful");

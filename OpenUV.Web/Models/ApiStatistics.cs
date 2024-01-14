@@ -2,7 +2,7 @@
 
 namespace OpenUV.Web.Models
 {
-    public class Statistics
+    public class ApiStatistics
     {
         [JsonPropertyName("requests_today")]
         public uint RequestsToday { get; set; } = default!;
@@ -17,15 +17,15 @@ namespace OpenUV.Web.Models
         public uint RequestsLastMonth { get; set; } = default!;
 
         [JsonPropertyName("cost_today")]
-        public uint CostToday { get; set; } = default!;
+        public double CostToday { get; set; } = default!;
 
         [JsonPropertyName("cost_yesterday")]
-        public uint CostYesterday { get; set; } = default!;
+        public double CostYesterday { get; set; } = default!;
 
         [JsonPropertyName("cost_month")]
-        public uint CostThisMonth { get; set; } = default!;
+        public double CostThisMonth { get; set; } = default!;
 
         [JsonPropertyName("cost_last_month")]
-        public uint CostLastMonth { get; set; } = default!;
+        public double CostLastMonth { get; set; } = default!;
     }
 }

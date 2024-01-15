@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace OpenUV.Web.Models
+namespace OpenUV.Web.Models.Internal
 {
     internal class ApiStatus
     {

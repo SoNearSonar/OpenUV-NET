@@ -101,7 +101,7 @@ namespace OpenUV.Web.Tests
             try
             {
                 var client = new OpenUVClient("");
-                UVIndexStatistics uvInvexStat = client.GetUVIndexStatistics(36.16, 139.11).Result;
+                List<UVIndexForecast> uvIndexForecasts = client.GetUVIndexForecast(36.16, 139.11).Result;
                 Assert.Fail("This test case should not go here");
             }
             catch (AggregateException ex)

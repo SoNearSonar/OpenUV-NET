@@ -22,3 +22,15 @@ OpenUV.Web/obj/
 OpenUV.Web/bin/Debug/net7.0/
 
 OpenUV.Web.Tests/bin/Debug/net7.0/
+
+OpenUV.Web.Tests/bin/Release/net6.0/
+
+OpenUV.Web.Tests/bin/Release/net7.0/
+
+OpenUV.Web/bin/Debug/
+
+OpenUV.Web/bin/Release/net6.0/
+
+OpenUV.Web/bin/Release/net7.0/
+
+OpenUV.Web/bin/Release/

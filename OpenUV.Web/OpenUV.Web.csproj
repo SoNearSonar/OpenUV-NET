@@ -4,6 +4,28 @@
     <TargetFrameworks>net7.0;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>OpenUV.Web</Title>
+    <Authors>SoNearSonar</Authors>
+    <Description>A client for OpenUV's web API, written in C#/NET. A website which gives you UV index information</Description>
+    <PackageProjectUrl>https://github.com/SoNearSonar/OpenUV-NET</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/SoNearSonar/OpenUV-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>api;c#;net;weather;uv</PackageTags>
+    <PackageReleaseNotes>Added license to NuGet page</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Version>1.0.0.1</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
